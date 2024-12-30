@@ -1,0 +1,67 @@
+<style>
+     
+
+    gmpx-store-locator {
+      width: 100%;
+      height: 100%;
+
+      /* These parameters customize the appearance of Locator Plus. See the documentation at
+         https://github.com/googlemaps/extended-component-library/blob/main/src/store_locator/README.md
+         for more information. */
+      --gmpx-color-surface: #fff;
+      --gmpx-color-on-surface: #212121;
+      --gmpx-color-on-surface-variant: #757575;
+      --gmpx-color-primary: #1967d2;
+      --gmpx-color-outline: #e0e0e0;
+      --gmpx-fixed-panel-width-row-layout: 28.5em;
+      --gmpx-fixed-panel-height-column-layout: 65%;
+      --gmpx-font-family-base: "Roboto", sans-serif;
+      --gmpx-font-family-headings: "Roboto", sans-serif;
+      --gmpx-font-size-base: 0.875rem;
+      --gmpx-hours-color-open: #188038;
+      --gmpx-hours-color-closed: #d50000;
+      --gmpx-rating-color: #ffb300;
+      --gmpx-rating-color-empty: #e0e0e0;
+    }
+  </style>
+  <script>
+    const CONFIGURATION = {
+      "locations": [
+        {"title":"Organic Mandya Farmers Market, JP Nagar","address1":"539, 17th Main, Opp to","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.8915737,"lng":77.5816304},"placeId":"ChIJvXo1r6kVrjsRwkd2TpbWRjU"},
+       
+        {"title":"Organic Mandya Farmers Market, Indiranagar","address1":"676, 9th A Main Road","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.9775704,"lng":77.6421452},"placeId":"ChIJY2BAJ4QXrjsRVmAAe6QhsDQ"},
+        {"title":"Organic Mandya Farmers Market, Malleshwaram","address1":"2H3C+9G9","address2":"Bengaluru, Karnataka, India","coords":{"lat":13.0034375,"lng":77.5713125},"placeId":"ChIJsezedAAXrjsRk-IyiaLO3DY"},
+        {"title":"Organic Mandya Farmers Market, HRBR Layout","address1":"7M - 211, 7th Main Road","address2":"Bengaluru, कर्नाटक, India","coords":{"lat":13.0208449,"lng":77.6431999},"placeId":"ChIJVVwBtisXrjsRCxPyXLfWVAo"},
+        {"title":"Organic Mandya Farmers Market, Basavanagudi","address1":"Bysani Enclave, Vani Vilas Road, near SLV Corner, Basavanagudi, Gandhi ","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.9483455,"lng":77.5698649},"placeId":"ChIJw3XW5iwVrjsRt0xcLY-VhUA"},
+        {"title":"Organic Mandya Farmers Market, Sarjapur","address1":"36/1/6, Sarjapur - Marathahalli road, Doddakanneli,","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.9076281,"lng":77.6935316},"placeId":"ChIJ3zgXTfoTrjsRLiLaF-WyH3U"},
+        {"title":"The Organic Oven","address1":"HCS Complex, Main Borewell road, 3rd Cross Rd, corner, Whitefield","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.9684448,"lng":77.7457057},"placeId":"ChIJ_YQTtNQNrjsRVGyPcavi3RY"},
+        {"title":"Organic Mandya Farmers Market, Whitefield","address1":"Organic Mandya, HCS Complex, Main Borewell road, 3rd cross corner,","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.968469,"lng":77.7457032},"placeId":"ChIJE3EfmfYTrjsRqHw-v2lEJjk"},
+        {"title":"Organic Mandya Farmers Market, Frazer Town","address1":"#74, Naseer Pride, Ground Floor, Madhavraya Mudaliar Road(M M Road), Frazer ","address2":"Bengaluru, Karnataka, India","coords":{"lat":13.0005738,"lng":77.6143272},"placeId":"ChIJ2RQ3wcAXrjsRBoMMuiSDPq0"},
+        {"title":"Organic Mandya Farmers Market, AECS Layout","address1":"Akshaya, No.1338, AECS Layout D Block","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.9624969,"lng":77.7133482},"placeId":"ChIJa0jvSdsTrjsRhthnxqwTxJU"},
+        {"title":"Organic Mandya Farmers Market, Shivalli","address1":"National Highway 275","address2":"Mathikere, Karnataka, India","coords":{"lat":12.6390402,"lng":77.1425632},"placeId":"ChIJm6J4lT6trzsRSM2PKv-TM2I"},
+        {"title":"Organic Mandya Farmers Market, Electronic City","address1":"Sai Arcade, Ground floor, Ananth nagar Phase 2, Kammasandra, Electronic City,","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.8352508,"lng":77.693974},"placeId":"ChIJkQg0_s9trjsR6ABaewSDNQg"},
+        {"title":"Organic Mandya Farmers Market, Kokapet","address1":"Shop No : 7, Sunshine Key Golden Square, Plot No - 8 \u0026 9, Golden Mile Road, ","address2":"Hyderabad, Telangana, India","coords":{"lat":17.3904125,"lng":78.341718},"placeId":"ChIJf93XkdmVyzsRHlIUBpInoRQ"},
+        {"title":"Organic Mandya Farmers Market, HSR Layout","address1":"14th Main Rd, Opp Unlimited fashion","address2":"Bengaluru, Karnataka, India","coords":{"lat":12.910985,"lng":77.6380269},"placeId":"ChIJJ1xzv48UrjsRPUOgtfWfgzM"}
+      ],
+      "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+      "mapsApiKey": "AIzaSyDS5FA7I2O_ecb-qXR3NpNU5S2t9RjIwts",
+      "capabilities": {"input":true,"autocomplete":true,"directions":true,"distanceMatrix":true,"details":true,"actions":false}
+    };
+
+  </script>
+  <script type="module">
+    document.addEventListener('DOMContentLoaded', async () => {
+      await customElements.whenDefined('gmpx-store-locator');
+      const locator = document.querySelector('gmpx-store-locator');
+      locator.configureFromQuickBuilder(CONFIGURATION);
+    });
+  </script>
+
+
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+
+  <!-- Uses components from the Extended Component Library; see
+       https://github.com/googlemaps/extended-component-library for more information
+       on these HTML tags and how to configure them. -->
+  <gmpx-api-loader key="AIzaSyDS5FA7I2O_ecb-qXR3NpNU5S2t9RjIwts" solution-channel="GMP_QB_locatorplus_v11_cABCDE"></gmpx-api-loader>
+  <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
